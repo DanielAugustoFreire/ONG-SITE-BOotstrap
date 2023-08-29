@@ -1,0 +1,33 @@
+<div class="bg-white">
+        <div class="p-3 pb-md-4 mx-auto text-center mb-0">
+          <h1 class="display-4 fw-normal text-body-emphasis text-black">Sobre nós</h1>
+          <p class="fs-5 text-black">
+            Aqui apresentamos nossa Visão, Missão e Valores: A essência que nos guia.</p>
+        </div>
+  
+        <div class="container mx-auto text-center text-black ">
+          <div class="row">
+                <div class="col-lg-4">
+                  <img src="assets/images/icons/mission.png" width="140px" height="140px" alt="">
+                  <h2 class="fw-normal">Missão</h2>
+                  <p>A SavePet's busca proteger e cuidar dos animais domésticos, oferecendo
+                    abrigo, tratamento médico e combate ao abuso e negligência desses animais.
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img src="assets/images/icons/eye.gif" class="rounded-circle" width="140px" height="100px" alt=""><h2 class="fw-normal">  
+                  <h2 class="fw-normal">Visão</h2>
+                  <p>A ONG visa um mundo onde todos os animais são tratados com respeito,
+                    compaixão e cuidado independentemente de sua espécie, raça, idade ou condição. Tendo em vista, proteger seus habitats naturais e oferecer lares.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img src="assets/images/icons/valores.png" class="rounded-circle" width="140px" height="140px" alt="">
+                  <h2 class="fw-normal">Valores</h2>
+                  <p>Responsabilidade, Transparência, Natureza, Vida, Comprometimento, Solidariedade,
+                    Empatia, Sustentabilidade, Inclusão e Educação.
+                  </p>
+  
+                </div><!-- /.col-lg-4 -->
+              </div><!-- /.row -->
+        </div>
+      </div>
