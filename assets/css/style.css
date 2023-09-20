@@ -15,8 +15,9 @@ body {
 	color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-
-
+#quem{
+  background-color: rgba(0, 0, 0, 0.727);
+}
 
 .carousel-caption {
   bottom: 3rem;
@@ -62,3 +63,4 @@ body {
     margin-top: 7rem;
   }
 }
+
