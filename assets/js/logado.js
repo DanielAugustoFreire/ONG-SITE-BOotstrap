@@ -1,20 +1,39 @@
-function Validar()
-{
+function Sair() {
+    estaLogado = false;
+    // Redirecione o usuário para a página de login ou onde desejar
+    location.href = "login.html"; // Substitua "login.html" pela página desejada
+}
+// Verifique se há uma entrada no Local Storage indicando que o usuário está logado
+var estaLogado = localStorage.getItem('estaLogado') === 'true';
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Se o usuário estiver logado, altere o texto do botão para "SAIR"
+    if (estaLogado) {
+        var val = document.getElementById("LOGADO");
+        val.innerHTML = "SAIR";
+    }
+
+    // Resto do seu código
+});
+
+function Validar() {
     var email;
     var senha;
 
     email = document.getElementById("typeEmailX").value;
     senha = document.getElementById("typePasswordX").value;
 
-    if(email == "admin@admin.adm" && senha == "admin")
-    {
+    if (email == "admin@admin.adm" && senha == "admin") {
+        // Defina o estado de login no Local Storage como verdadeiro
+        localStorage.setItem('estaLogado', 'true');
+
         location.href = "index.html";
         alert("Sucesso");
 
-        document.getElementById("LOGADO").textContent = "SAIR";
-    }
-    else
-    {
+        // Após o redirecionamento, altere o texto do botão para "SAIR"
+        var val = document.getElementById("LOGADO");
+        val.innerHTML = "SAIR";
+    } else {
         alert("ERROU A SENHA");
     }
 }
