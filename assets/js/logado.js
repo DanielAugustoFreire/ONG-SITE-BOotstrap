@@ -1,8 +1,3 @@
-function Sair() {
-    estaLogado = false;
-    // Redirecione o usuário para a página de login ou onde desejar
-    location.href = "login.html"; // Substitua "login.html" pela página desejada
-}
 // Verifique se há uma entrada no Local Storage indicando que o usuário está logado
 var estaLogado = localStorage.getItem('estaLogado') === 'true';
 
@@ -15,6 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Resto do seu código
 });
+
+function Sair() {
+    estaLogado = false;
+    localStorage.setItem('estaLogado', 'false');
+    // Redirecione o usuário para a página de login ou onde desejar
+    location.href = "login.html"; // Substitua "login.html" pela página desejada
+}
 
 function Validar() {
     var email;
