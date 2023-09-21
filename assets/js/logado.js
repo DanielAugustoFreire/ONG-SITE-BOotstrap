@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (estaLogado) {
         var val = document.getElementById("LOGADO");
         val.innerHTML = "SAIR";
+        var vol = document.getElementById("voluntario");
+        vol.textContent = "Gerenciar Voluntarios";
+        vol.href = "gerenciamento.html"
     }
 
     // Resto do seu código

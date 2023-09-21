@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagamento Pix</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/DOACAO_PIX.css">
+    <link href="assets/images/pix2.png" rel="icon">
+
+</head>
+
+<body>
+
+    <img src="assets/images/pix2.png" alt="Logo Pix" style="position: absolute; top: 0; left: 0; max-height: 100px;">
+    <div class="container">
+        <h1 class="mt-5">Pagamento Pix</h1>
+        <p>Escaneie o QR code abaixo com o seu aplicativo Pix para fazer o pagamento:</p>
+        <img src="assets/images/pixdiff.png" alt="QR Code Pix" style="max-width: 180px;" class="img-fluid">
+        <p>ou</p>
+        <form class="mt-4" action="Doação_Principal.html" method="POST">
+            <div class="mb-3">
+                <p>Selecione a forma de pagamento:</p>
+                <div class="form-check">
+                    <input type="radio" id="chavePix" name="formaPagamento" class="form-check-input" value="chavePix"
+                        required>
+                    <label class="form-check-label" for="chavePix">Chave Pix</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="codigoAleatorio" name="formaPagamento" class="form-check-input"
+                        value="codigoAleatorio" required>
+                    <label class="form-check-label" for="codigoAleatorio">Código Aleatório</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="email" name="formaPagamento" class="form-check-input" value="email"
+                        required>
+                    <label class="form-check-label" for="email">Email</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="chavePix" class="form-label">Chave Pix, Código Aleatório ou Email:</label>
+                <input type="text" id="chavePix" name="chavePix" class="form-control"
+                    placeholder="Digite sua chave Pix, código aleatório ou email" required>
+            </div>
+            <div class="mb-3">
+                <label for="valor" class="form-label">Valor:</label>
+                <input type="text" id="valor" name="valor" class="form-control" placeholder="Digite o valor a ser pago"
+                    required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" onclick="alert('Pagamento concluído!')">Realizar Pagamento</button>
+            <script>
+                document.querySelector('form').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Impede o envio padrão do formulário
+
+                    // Redireciona o usuário para a página inicial após abrir o PDF
+                    window.location.href = 'DOACAO_MAIN.html';
+                });
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>
