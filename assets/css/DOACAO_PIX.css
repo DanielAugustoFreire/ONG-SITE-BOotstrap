@@ -22,15 +22,3 @@
     max-width: 400px;
     margin: 0 auto 15px;
 }
-
-/* Estilizar o botão de submissão */
-.btn {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-}
-
-body {
-    background-color: rgb(157, 156, 156);
-}
-

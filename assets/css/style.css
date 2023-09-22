@@ -64,3 +64,8 @@ body {
   }
 }
 
+#coll{
+  background-color: #fff3cd;
+  border-radius: 100px 100px  200px 150px;
+  border-color: black;
+}
